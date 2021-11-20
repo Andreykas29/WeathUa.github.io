@@ -186,21 +186,88 @@ opacity: 0.5;	 ;
 	margin-top: 60px;
 }
 
+
 @media screen and(max-width: 1200px) {
-	.container {
-		background: red;
+		body {
+		background-size: 200%;
+	}
+	.weather-by-days {
+		width: 100%;
+		max-width: 1000px;
 	}
 }
 
 @media screen and(max-width: 1000px) {
-	.container {
-		background: blue;
+		body {
+		background-size: 300%;
+	}
+
+	.weather-by-days {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.day {
+		
+		margin-bottom: 10px;
 	}
 }
 
+@media screen and(max-width: 767px) {
+		body {
+		background-size: 500%;
+	}
+	.container {
+		min-width: 100%;
+	}
+	.weather-by-days {
+		justify-content: center;
+	}
+}
 
+@media screen and(max-width: 660px) {
+		body {
+		background-size: 600%;
+	}
+	.weather-by-days {
+		width: 100%;
+		.day {
+			width: 90%;
+			p {
+				font-size: 20px;
+			}
+			h2 {
+				margin-top: 10px;
+			}
+		}
+	}
+}
 
+@media screen and(max-width: 660px) {
+		body {
+		background-size: 700%;
+	}
+ .weather-main {
+ 	width: 97%;
+ 	margin: 0 auto;
 
+ }
+ .adv {
+ 	margin-top: 30px;
+ 	font-size: 25px;
+ }
+}
+
+@media screen and(max-width: 420px) {
+	.weather-main-top {
+
+		.country {
+		margin-right: 70px;
+	}
+	}
+		.weather-main-bottom {
+		margin: 0 auto;
+	}
+}
 
 
 
