@@ -18,7 +18,7 @@ p {
 
 body {
   background: url("../img/bg1.jpg") no-repeat;
-  background-size: cover;
+  background-size: 300%;
 }
 
 .container {
@@ -100,14 +100,14 @@ body {
 }
 
 .weather-main-top {
-  margin: 0 auto;
+  margin: 0 ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
 .weather-main-top .country {
-  margin-right: 170px;
+  margin-right: 140px;
 }
 
 .weather-main::before {
@@ -266,11 +266,10 @@ body {
 }
 @media screen and (max-width: 660px) {
   body {
-    background-size: 700%;
+    background-size: cover;
   }
 
   .weather-main {
-    width: 97%;
     margin: 0 auto;
   }
 
@@ -281,10 +280,10 @@ body {
 }
 @media screen and (max-width: 420px) {
   .weather-main-top .country {
-    margin-right: 70px;
+    margin-right: 50px;
   }
 
   .weather-main-bottom {
-    margin: 0 auto;
+    margin: 0;
   }
 }
