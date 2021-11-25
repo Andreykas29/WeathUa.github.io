@@ -23,7 +23,7 @@ p {
 
 body {
 	background:url('../img/bg1.jpg') no-repeat;
-	background-size: cover;
+	background-size: 300%;
 }
 
 .container {
@@ -258,6 +258,9 @@ opacity: 0.5;	 ;
 }
 
 @media screen and(max-width: 420px) {
+			body {
+		background-size: 800%;
+	}
 	.weather-main-top {
 
 		.country {
@@ -269,6 +272,98 @@ opacity: 0.5;	 ;
 	}
 }
 
+@media screen and(min-width: 1999px){
+	.day {
+		width: 100%;
+		height: 100%;
+		h2 {
+			font-size: 45px;
+		}
+	}
+	.day-temp {
+		margin-bottom:50px;
+		margin-top: 10px;
+		p {
+			font-size: 32px;
+		}
+		p:nth-child(1) {
+			margin-bottom: 20px;
+		}
+	}
+.weather-by-days {
 
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 10px; 
+	grid-row-gap: 10px; 
+}
+
+.weather-main {
+width: 50%;
+h2 {
+	font-size: 50px;
+}
+p {
+	font-size: 35px;
+}
+.country-title {
+	margin-right: 70px;
+}
+}
+.adv {
+	margin-top: 20px;
+}
+}
+
+@media screen and(min-width: 3999px){
+	.weather-main {
+		width: 1000px;
+		height: 300px;
+		h2 {
+	font-size: 60px;
+}
+p {
+	font-size: 45px;
+}
+.country-title {
+	margin-right: 220px;
+}
+
+	}
+	.weather-main-bottom {
+		margin-left: 7%;
+		p:nth-child(1) {
+				position: relative;
+				right: -20px;
+				bottom: 7px;
+		}
+	}
+	.weather-by-days {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		width: 90%;
+		h2 {
+			font-size: 55px;
+		}
+	}
+	.day-temp {
+		margin-bottom:90px;
+		margin-top: 20px;
+		p {
+			font-size: 40px;
+		}
+		p:nth-child(1) {
+			margin-bottom: 50px;
+		}
+	}
+	.adv {
+		font-size: 70px;
+		position: absolute;
+		bottom: 30%;
+		left: 10%;
+	}
+}
 
 
