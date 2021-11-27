@@ -73,11 +73,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+}
+
+.today-temp {
+  text-align: center;
+}
+.weather-main-temp-max {
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.weather-main-temp-min {
+  margin-bottom: 0;
+  margin-left: 30px;    
+}
+.day-temp-main {
+  
 }
 
 .action-description {
   margin-left: 50px;
 }
+/* ?? */
 .action-description .desc img {
   width: 20px;
   height: 20px;
@@ -146,6 +164,7 @@ body {
   padding-bottom: 10px;
 }
 
+/* 6 days */
 .day {
   display: block;
   position: relative;
@@ -157,7 +176,7 @@ body {
   margin: 0 auto;
   margin-right: 15px;
   width: 300px;
-  height: 200px;
+  padding-bottom: 15px;
 }
 .day img {
   margin-top: 5px;
@@ -169,7 +188,10 @@ body {
   margin-top: 7%;
 
 }
-
+.day-img img {
+  height: 100px;
+  width: 100px;
+}
 .weather-main-morning p {
   font-weight: 800;
   font-size: 24px;
@@ -272,7 +294,7 @@ body {
   }
 
   .weather-main {
-    width: 50%;
+    width: 45%;
   }
 
   .weather-main h2 {
@@ -449,21 +471,36 @@ body {
 }
 @media screen and (max-width: 420px) {
   body {
-    background-size: 800%;
-  }
-
-  .weather-main-top .country {
-    margin-right: 50px;
+    background-size: cover;
   }
 
   .weather-main-bottom {
     margin: 0;
   }
+  .weather-main-top {
+    justify-content: space-between; 
+  }
+  .weather-main-top .country {
+    margin-right: 0;
+  }
+ 
 }
 @media screen and (max-width: 380px) {
   .adv {
     font-size: 20px;
     text-align: center;
+  }
+  .weather-main {
+    width: 95%;
+    padding: 10px;
+  }
+  .weather-main-temp-max,
+  .weather-main-temp-min {
+    margin-left: 0;
+  }
+
+  .action-description {
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 1999px) {
@@ -528,7 +565,7 @@ body {
   }
 
   .weather-main {
-    width: 50%;
+    width: 45%;
   }
   .weather-main h2 {
     font-size: 50px;
@@ -597,6 +634,9 @@ body {
   }
 }
 @media screen and (min-width: 1999px) {
+  .weather-main-top {
+    justify-content: space-between;
+  }
   .day {
     width: 100%;
     height: 100%;
@@ -658,7 +698,7 @@ body {
   }
 
   .weather-main {
-    width: 50%;
+    width: 45%;
   }
   .weather-main h2 {
     font-size: 50px;
