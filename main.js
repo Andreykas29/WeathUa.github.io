@@ -9,7 +9,7 @@ if (window.innerWidth < 380) {
 }
 //request
 fetch(
-  "http://api.openweathermap.org/data/2.5/onecall?lat=49.838261&lon=24.023239&appid=e0b7f51d5f85c59b573d85a9e1839e8c"
+  "https://api.openweathermap.org/data/2.5/onecall?lat=49.838261&lon=24.023239&appid=e0b7f51d5f85c59b573d85a9e1839e8c"
 )
   .then(function (resp) {
     return resp.json();
